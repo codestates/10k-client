@@ -3,8 +3,6 @@ import Signin from './components/Signin';
 import React, { useState } from 'react'
 import { Route, useHistory, Redirect } from "react-router-dom"
 import axios from 'axios'
-import Mypage from './components/Mypage';
-import SignUp from './components/SignUp';
 
 
 // 클래스명은 아직 넣지말기. 협의 후 넣기.
@@ -37,10 +35,6 @@ function App() {
       <Route path='/user/signin'
         render={() => (
           <Signin login={login} handleResponseSuccess={handleResponseSuccess}/>
-        )} />
-         <Route path='/user/signup'
-        render={() => (
-          <SignUp />
         )} />
         <Route
             path='/'
